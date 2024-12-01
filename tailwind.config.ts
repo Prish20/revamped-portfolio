@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss";
 import tailwindcssAnimate from "tailwindcss-animate";
-
+import typography from "@tailwindcss/typography";
 const config: Config = {
   darkMode: ["class"],
   content: [
@@ -24,11 +24,19 @@ const config: Config = {
     },
     extend: {
       colors: {
-        primary: "#111827",
+        primary: {
+          100: "#00FF00",
+          DEFAULT: "#111827",
+        },
         accent: {
           DEFAULT: "#00ff99",
           hover: "#00e187",
         },
+      },
+      boxShadow: {
+        100: "2px 2px 0px 0px rgb(16, 185, 129)",
+        200: "2px 2px 0px 2px rgb(16, 185, 129)",
+        300: "2px 2px 0px 2px rgb(16, 185, 129)",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -37,6 +45,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [tailwindcssAnimate],
+  plugins: [tailwindcssAnimate, typography],
 };
 export default config;

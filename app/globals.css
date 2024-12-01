@@ -16,6 +16,52 @@
   .h1 {
     @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
   }
+  .heading {
+    @apply uppercase bg-black px-6 py-3 font-extrabold text-white sm:text-[54px] sm:leading-[64px] text-[36px] leading-[46px] text-center my-5;
+  }
+  .section-container {
+    @apply px-14 py-6 justify-center max-w-7xl mx-auto;
+  }
+  .card_grid {
+    @apply grid md:grid-cols-3 sm:grid-cols-2 gap-5;
+  }
+  .card_grid-sm {
+    @apply grid sm:grid-cols-2 gap-5;
+  }
+  .no-result {
+    @apply text-black text-sm font-normal;
+  }
+  .pink_container {
+    @apply w-full bg-primary min-h-[530px] flex justify-center items-center flex-col py-2 px-6;
+  }
+  .startup-card {
+    @apply bg-gray-900 border-[5px] border-emerald-500 py-6 px-5 rounded-[22px] shadow-200 hover:border-emerald-500 transition-all duration-500 hover:shadow-300 hover:bg-gray-800 flex flex-col justify-between h-full;
+  }
+  .services-link {
+    @apply flex size-[50px] items-center justify-center rounded-full bg-white transition-all duration-500 group-hover:bg-accent
+  }
+  .services-btn {
+    @apply text-2xl text-primary transition-transform duration-500 group-hover:rotate-45
+  }
+  .startup-card_date {
+    @apply font-medium text-[16px] bg-primary-100 px-4 py-2 rounded-full group-hover:bg-white-100;
+  }
+
+  .startup-card_desc {
+    @apply font-normal text-[16px] line-clamp-2 my-3 text-black-100 break-all;
+  }
+
+  .startup-card_img {
+    @apply w-full h-[164px] rounded-[10px] object-cover;
+  }
+
+  .startup-card_btn {
+    @apply rounded-full bg-black-200 font-medium text-[16px] text-white px-5 py-3 !important;
+  }
+
+  .startup-card_skeleton {
+    @apply w-full h-96 rounded-[22px] bg-zinc-400;
+  }
   .text-outline {
     -webkit-text-stroke: 1px #ffffff;
   }

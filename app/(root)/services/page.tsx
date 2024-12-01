@@ -1,24 +1,10 @@
 import React from "react";
-import ServicesCard from "@/components/ServicesCard";
+import ServicesCard, { ServicesTypeCard } from "@/components/ServicesCard";
+import { client } from "@/sanity/lib/client";
+import { SERVICES_QUERY } from "@/sanity/lib/queries";
 
-const services = [
-  {
-    num: "01",
-    title: "Full-Stack Web Development",
-    _id: "1",
-    description:
-      "End-to-end web development solutions using modern frameworks like React, Node.js, and Express. I specialize in building fast, responsive, and scalable web applications that meet business needs while ensuring a seamless user experience across all devices.",
-  },
-  {
-    num: "02",
-    title: "UI/UX Design & Front-End Development",
-    _id: "2",
-    description:
-      "I combine user-centered design principles with modern front-end technologies to create visually engaging and intuitive interfaces. From wireframes to fully responsive layouts using React, Tailwind CSS, or similar tools, I ensure your users have an outstanding experience.",
-  },
-];
-
-const Services = () => {
+const Services = async () => {
+  const services = await client.fetch(SERVICES_QUERY);
   return (
     <>
       <section className="section-container">

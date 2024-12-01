@@ -1,8 +1,10 @@
 import React from "react";
 import Link from "next/link";
 import { BsArrowDownRight } from "react-icons/bs";
+import { Services } from "@/sanity/types";
 
-const ServicesCard = ({ services }: { services: ServicesTypeCard }) => {
+export type ServicesTypeCard = Omit<Services, "services">;
+export const ServicesCard = ({ services }: { services: ServicesTypeCard }) => {
   const { num, title, description, _id } = services;
   return (
     <div>
@@ -12,7 +14,7 @@ const ServicesCard = ({ services }: { services: ServicesTypeCard }) => {
           <h3 className="text-2xl font-bold">{title}</h3>
           <p className="text-lg text-white/50">{description}</p>
         </div>
-        <Link href={`/services/${_id}`} className="mt-2">
+        <Link href={`/services/${_id}`} className="mt-4">
           <div className="services-link">
             <BsArrowDownRight className="services-btn" />
           </div>

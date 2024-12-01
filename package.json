@@ -22,7 +22,7 @@
     "framer-motion": "^11.12.0",
     "imagekitio-next": "^1.0.1",
     "lucide-react": "^0.462.0",
-    "next": "15.0.3",
+    "next": "^15.0.4-canary.33",
     "next-sanity": "^9.8.3-canary.1",
     "react": "19.0.0-rc-66855b96-20241106",
     "react-countup": "^6.5.3",

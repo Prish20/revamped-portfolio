@@ -14,7 +14,7 @@ const Services = async () => {
               <ServicesCard key={services?._id} services={services} />
             ))
           ) : (
-            <p className="no-result">No startups found</p>
+            <p className="no-result">No services found</p>
           )}
         </ul>
       </section>

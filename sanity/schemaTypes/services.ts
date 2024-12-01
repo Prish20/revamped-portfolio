@@ -17,5 +17,9 @@ export default defineType({
       name: "num",
       type: "string",
     }),
+    defineField({
+      name: "image",
+      type: "url",
+    }),
   ],
 });

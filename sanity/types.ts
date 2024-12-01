@@ -139,7 +139,8 @@ export type Services = {
   _rev: string;
   title?: string;
   description?: string;
-  num?: number;
+  num?: string;
+  image?: string;
 };
 
 export type AllSanitySchemaTypes = SanityImagePaletteSwatch | SanityImagePalette | SanityImageDimensions | SanityImageHotspot | SanityImageCrop | SanityFileAsset | SanityImageAsset | SanityImageMetadata | Geopoint | Slug | SanityAssetSourceData | Services;

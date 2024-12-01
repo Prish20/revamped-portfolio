@@ -1,10 +1,10 @@
 import React from "react";
 import ServicesCard, { ServicesTypeCard } from "@/components/ServicesCard";
-import { client } from "@/sanity/lib/client";
 import { SERVICES_QUERY } from "@/sanity/lib/queries";
+import { sanityFetch, SanityLive } from "@/sanity/lib/live";
 
 const Services = async () => {
-  const services = await client.fetch(SERVICES_QUERY);
+  const { data: services } = await sanityFetch({ query: SERVICES_QUERY });
   return (
     <>
       <section className="section-container">
@@ -18,6 +18,7 @@ const Services = async () => {
           )}
         </ul>
       </section>
+      <SanityLive />
     </>
   );
 };

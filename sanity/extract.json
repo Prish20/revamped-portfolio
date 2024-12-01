@@ -744,7 +744,14 @@
       "num": {
         "type": "objectAttribute",
         "value": {
-          "type": "number"
+          "type": "string"
+        },
+        "optional": true
+      },
+      "image": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
         },
         "optional": true
       }

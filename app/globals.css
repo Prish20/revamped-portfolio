@@ -31,6 +31,18 @@
   .card_grid {
     @apply grid md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-3 gap-5;
   }
+  .project_grid {
+    @apply grid grid-cols-1 gap-6;
+  }
+  .project_num {
+    @apply text-6xl md:text-8xl leading-none font-extrabold text-transparent text-outline;
+  }
+  .project_title {
+    @apply text-2xl md:text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize
+  }
+  .project_flex {
+    @apply mt-4 flex flex-col items-center gap-2 md:flex-col lg:flex-col lg:gap-12 xl:flex-row
+  }
   .card_grid-sm {
     @apply grid sm:grid-cols-2 gap-5;
   }
@@ -39,6 +51,12 @@
   }
   .pink_container {
     @apply bg-gray-800 flex flex-col items-center justify-center mx-6 md:mx-12 lg:mx-44 ;
+  }
+  .shad_trigger {
+    @apply flex size-[50px] items-center justify-center rounded-full bg-white/5 md:size-[70px]
+  }
+  .shad_trigger2 {
+    @apply flex size-[50px] items-center justify-center rounded-full bg-white/5 md:size-[70px]
   }
   .startup-card {
     @apply bg-gray-900 border-[5px] border-emerald-500 py-6 px-5 rounded-[22px] shadow-200 hover:border-emerald-500 transition-all duration-500 hover:shadow-300 hover:bg-gray-800 flex flex-col justify-between h-full;

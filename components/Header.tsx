@@ -29,7 +29,7 @@ const Header = () => {
       <div className="container mx-auto flex items-center justify-between py-8 text-black transition-all duration-500">
         {/* Logo */}
         <Link href="/">
-          <Image src="/logo.svg" alt="Logo" width={180} height={180} />
+          <Image src="/Logo.svg" alt="Logo" width={180} height={180} />
         </Link>
 
         {/* Desktop Nav */}

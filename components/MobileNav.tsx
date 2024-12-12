@@ -35,7 +35,7 @@ const MobileNav = () => {
         <div className="items-center">
           {/* Logo */}
           <Link href="/">
-            <Image src="/logo.svg" alt="Logo" width={180} height={180} />
+            <Image src="/Logo.svg" alt="Logo" width={180} height={180} />
           </Link>
         </div>
 

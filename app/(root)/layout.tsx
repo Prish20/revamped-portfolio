@@ -5,6 +5,7 @@ import React from "react";
 import { Poppins } from "next/font/google";
 import Header from "@/components/Header";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 // import { FloatingDock } from "@/components/ui/floating-dock.";
 // import { FiGithub, FiLinkedin } from "react-icons/fi";
@@ -50,6 +51,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Analytics />
+        <SpeedInsights />
         {/* Floating Dock */}
         {/* <div className=" sticky bottom-0 z-40"> */}
         {/*  <div className="sticky -mb-16 mt-12 !flex "> */}

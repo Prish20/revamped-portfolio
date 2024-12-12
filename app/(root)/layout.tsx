@@ -35,7 +35,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Christadrian Sanya",
   description:
-    "A passionate Full-Stack Software Engineer specializing in scalable, high-performance web applications. I&apos;m proficient in various programming languages and eager to bring my skills to your team to build exceptional web solutions.",
+    "A passionate Full-Stack Software Engineer specializing in scalable, high-performance web applications. I'm proficient in various programming languages and eager to bring my skills to your team to build exceptional web solutions.",
 };
 
 export default function RootLayout({

@@ -2,20 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  /* Your custom base styles here */
+  body {
+    @apply font-primary bg-primary text-black leading-loose;
+  }
+  .timeline {
+    @apply h-20 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-44 lg:h-60;
+  }
+  .projects_page {
+    @apply rounded-full bg-accent/85 p-6 font-extrabold uppercase text-white transition-all duration-500 hover:scale-105 hover:bg-accent/85 lg:p-8
+  }
+  .timeline_btn {
+    @apply rounded-full bg-accent/90 px-12 py-4 font-bold uppercase tracking-widest text-white transition-colors duration-200 hover:scale-105;
+  }
+  .text-outline {
+    -webkit-text-stroke: 1px #ffffff;
+  }
+  .text-outline-hover {
+    -webkit-text-stroke: 1px #00ff99;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  @keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-50% - 1rem)); /* account for gap */
   }
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.animate-scroll {
+  animation: scroll var(--animation-duration) var(--animation-direction) linear infinite;
+}
 }

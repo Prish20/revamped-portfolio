@@ -28,7 +28,7 @@ const Page = async ({
 
   return (
     <BlurFade>
-      <div className="container  mb-24 px-12">
+      <div className="container  mb-24 lg:px-12">
         <div className="my-12 flex flex-col items-center shadow-2xl">
           <h1 className="m-6 text-3xl font-extrabold text-black dark:text-neutral-200 sm:text-4xl md:text-5xl lg:text-6xl">
             {title}
@@ -52,7 +52,7 @@ const Page = async ({
             </Link>
           </div>
         </div>
-        <div className="grid grid-cols-2 items-center justify-center gap-6 ">
+        <div className="grid grid-cols-1 items-center justify-center gap-6 md:px-12 ">
           {images.map(
             (image: { asset: { _ref: string }; alt?: string }, idx: number) => (
               <div key={idx} className="relative">
